@@ -1,0 +1,158 @@
+:root {
+    --black: #000000;
+    --cta: #6E9C9F;
+    --white: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
+@import "reset";
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: var(--black);
+    letter-spacing: 0.02em;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 34px 0;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 67px;
+    }
+
+    &__address {}
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.4;
+        transition: color .5s;
+
+        &:hover {
+            color: var(--cta);
+        }
+
+        &:hover &-button {
+            background-color: var(--cta);
+        }
+
+        &:hover &-icon {
+            fill: var(--white);
+        }
+    }
+
+    &__phone-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 27px;
+        height: 27px;
+        transition: background-color .5s;
+    }
+
+    &__phone-icon {
+        width: 17px;
+        height: 17px;
+        fill: var(--cta);
+        transition: fill .5s;
+    }
+
+    &__cart {
+        position: relative;
+    }
+
+    &__cart-icon {}
+
+    &__cart-quantity {
+        position: absolute;
+        top: -9px;
+        right: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15px;
+        height: 15px;
+        color: var(--white);
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        border-radius: 50px;
+        background: #998E78;
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 146px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &__icon {
+        width: 25px;
+        height: 25px;
+        margin-right: 11px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    &__link {
+        position: relative;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.4;
+        transition: color .5s;
+
+        &.active {
+            color: var(--cta);
+            font-weight: 700;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--cta);
+            transform: scale(0);
+            transition: transform .5s;
+        }
+
+        &:hover {
+            color: var(--cta);
+
+            &::after {
+                transform: scale(1);
+            }
+        }
+
+    }
+}
