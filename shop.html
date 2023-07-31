@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womazing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__block">
+                <nav class="nav">
+                    <a href="./" class="logo">
+                        <svg class="logo__icon">
+                            <use href="./img/icons.svg#icon-logo"></use>
+                        </svg>
+                        Womazing
+                    </a>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="main-link menu__link" href="./">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="main-link menu__link active" href="./shop.html">
+                                Магазин
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="main-link menu__link" href="#">
+                                О бренде
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="main-link menu__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__right">
+                    <address class="header__address">
+                        <a class="header__phone" href="tel:+74958235412">
+                            <button class="header__phone-button" type="button">
+                                <svg class="header__phone-icon">
+                                    <use href="./img/icons.svg#icon-phone"></use>
+                                </svg>
+                            </button>
+                            +7 (495) 823-54-12
+                        </a>
+                    </address>
+                    <a class="header__cart" href="#">
+                        <svg class="header__cart-icon">
+                            <use href="./img/icons.svg#icon-cart"></use>
+                        </svg>
+                        <span class="header__cart-quantity">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="shop">
+            <div class="container">
+                <div class="page-title">
+                    <h1 class="page-title__title">
+                        Магазин
+                    </h1>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="./">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="./shop.html">
+                                Магазин
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="shop__filter">
+                    <li class="shop__filter-item">
+                        <button class="shop__filter-button active" type="button">
+                            Все
+                        </button>
+                    </li>
+                    <li class="shop__filter-item">
+                        <button class="shop__filter-button" type="button">
+                            Пальто
+                        </button>
+                    </li>
+                    <li class="shop__filter-item">
+                        <button class="shop__filter-button" type="button">
+                            Свитшоты
+                        </button>
+                    </li>
+                    <li class="shop__filter-item">
+                        <button class="shop__filter-button" type="button">
+                            Кардиганы
+                        </button>
+                    </li>
+                    <li class="shop__filter-item">
+                        <button class="shop__filter-button" type="button">
+                            Толстовки
+                        </button>
+                    </li>
+                </ul>
+                <div class="shop__block">
+                    <p class="shop__items-show">
+                        Показано: 9 из 12 товаров
+                    </p>
+                    <ul class="collection__list">
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-1.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-1.jpg 1x, ./img/retina/collection-1@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Футболка USA
+                                    </h4>
+                                    <span class="collection__item-price collection__item-old-price">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-price collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-2.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-2.jpg 1x, ./img/retina/collection-2@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Купальник Glow
+                                    </h4>
+                                    <span class="collection__item-old-price visually-hidden">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-3.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-3.jpg 1x, ./img/retina/collection-3@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Свитшот Sweet Shot
+                                    </h4>
+                                    <span class="collection__item-old-price visually-hidden">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-1.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-1.jpg 1x, ./img/retina/collection-1@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Футболка USA
+                                    </h4>
+                                    <span class="collection__item-price collection__item-old-price">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-price collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-2.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-2.jpg 1x, ./img/retina/collection-2@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Купальник Glow
+                                    </h4>
+                                    <span class="collection__item-old-price visually-hidden">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-3.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-3.jpg 1x, ./img/retina/collection-3@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Свитшот Sweet Shot
+                                    </h4>
+                                    <span class="collection__item-old-price visually-hidden">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-1.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-1.jpg 1x, ./img/retina/collection-1@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Футболка USA
+                                    </h4>
+                                    <span class="collection__item-price collection__item-old-price">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-price collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-2.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-2.jpg 1x, ./img/retina/collection-2@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Купальник Glow
+                                    </h4>
+                                    <span class="collection__item-old-price visually-hidden">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="collection__item">
+                            <a class="collection__item-link" href="#">
+                                <div class="collection__item-block-img">
+                                    <img class="collection__item-img" src="./img/collection-3.jpg" alt="Футболка USA"
+                                        srcset="./img/collection-3.jpg 1x, ./img/retina/collection-3@2x.jpg 2x">
+                                </div>
+    
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Свитшот Sweet Shot
+                                    </h4>
+                                    <span class="collection__item-old-price visually-hidden">
+                                        $229
+                                    </span>
+                                    <span class="collection__item-new-price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="shop__items-show">
+                        Показано: 9 из 12 товаров
+                    </p>
+                    <ul class="shop__pagination">
+                        <li class="shop__pagination-item">
+                            <a class="shop__pagination-link active" href="#">
+                                1
+                            </a>
+                        </li>
+                        <li class="shop__pagination-item">
+                            <a class="shop__pagination-link" href="#">
+                                2
+                            </a>
+                        </li>
+                        <li class="shop__pagination-item">
+                            <a class="shop__pagination-next" href="#">
+                                <svg class="shop__pagination-icon">
+                                    <use href="./img/icons.svg#icon-slider-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <nav class="nav">
+                    <a href="./" class="logo">
+                        <svg class="logo__icon">
+                            <use href="./img/icons.svg#icon-logo"></use>
+                        </svg>
+                        Womazing
+                    </a>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="main-link menu__link" href="./">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="main-link menu__link active" href="./shop.html">
+                                Магазин
+                            </a>
+                            <ul class="menu__dropdown">
+                                <li class="menu__dropdown-item">
+                                    <a class="menu__dropdown-link" href="#">
+                                        Пальто
+                                    </a>
+                                </li>
+                                <li class="menu__dropdown-item">
+                                    <a class="menu__dropdown-link" href="#">
+                                        Свитшоты
+                                    </a>
+                                </li>
+                                <li class="menu__dropdown-item">
+                                    <a class="menu__dropdown-link" href="#">
+                                        Кардиганы
+                                    </a>
+                                </li>
+                                <li class="menu__dropdown-item">
+                                    <a class="menu__dropdown-link" href="#">
+                                        Толстовки
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a class="main-link menu__link" href="#">
+                                О бренде
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="main-link menu__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="footer__contact">
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item">
+                            <a class="footer__contact-link" href="tel:+74958235412">
+                                +7 (495) 823-54-12
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a class="footer__contact-link" href="mailto:hello@womazing.com">
+                                hello@womazing.com
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="footer__block">
+                <ul class="footer__privacy-list">
+                    <li class="footer__privacy-item">
+                        © Все права защищены
+                    </li>
+                    <li class="footer__privacy-item">
+                        <a class="footer__privacy-link" href="#">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li class="footer__privacy-item">
+                        <a class="footer__privacy-link" href="#">
+                            Публичная оферта
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__social">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#" target="_blank">
+                                <svg class="footer__social-icon">
+                                    <use href="./img/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#" target="_blank">
+                                <svg class="footer__social-icon">
+                                    <use href="./img/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#" target="_blank">
+                                <svg class="footer__social-icon">
+                                    <use href="./img/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <img class="footer__card" src="./img/visa.png" alt="Visa"
+                        srcset="./img/visa.png 1x, ./img/retina/visa@2x.png 2x">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

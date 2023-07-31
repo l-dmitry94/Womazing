@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
 :root {
   --black: #000000;
@@ -192,6 +193,7 @@ body {
   position: relative;
 }
 .menu__link {
+  display: inline-block;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
@@ -601,4 +603,83 @@ body {
 }
 .footer__card {
   margin-left: auto;
+}
+
+.shop {
+  padding: 270px 0 130px;
+}
+.shop__filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 92px;
+}
+.shop__filter-button {
+  border: 1px solid #000;
+  padding: 19px 65px;
+}
+.shop__filter-button.active {
+  color: var(--white);
+  background-color: var(--black);
+}
+.shop__block {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+.shop__items-show {
+  color: #808080;
+  font-size: 17px;
+  line-height: 1.4;
+}
+.shop .collection__list {
+  flex-wrap: wrap;
+  row-gap: 65px;
+  margin-bottom: 0;
+}
+.shop__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+.shop__pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+  border: 1px solid var(--black);
+}
+.shop__pagination-link.active {
+  color: var(--white);
+  background-color: var(--black);
+}
+.shop__pagination-icon {
+  stroke: var(--black);
+}
+
+.page-title {
+  margin-bottom: 214px;
+}
+.page-title__title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 26px;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+.breadcrumbs__item:last-child .breadcrumbs__link {
+  color: #909090;
+}
+.breadcrumbs__item:not(:last-child)::after {
+  content: "—";
+  padding: 0 13px;
+}
+.breadcrumbs__link {
+  font-size: 17px;
+  line-height: 1.4;
 }
