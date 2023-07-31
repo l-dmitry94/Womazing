@@ -78,6 +78,11 @@ address {
   overflow: hidden;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -682,4 +687,124 @@ body {
 .breadcrumbs__link {
   font-size: 17px;
   line-height: 1.4;
+}
+
+.product {
+  padding: 190px 0 130px;
+}
+.product .page-title {
+  margin-bottom: 102px;
+}
+.product__block {
+  display: flex;
+  align-items: center;
+  gap: 74px;
+}
+.product__photo {
+  width: 536px;
+  height: 729px;
+}
+.product__photo-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product__info {
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+}
+.product__price {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  line-height: 1.1;
+}
+.product__price-new {
+  color: #998E78;
+  font-size: 40px;
+  font-weight: 500;
+}
+.product__price-old {
+  color: #9C9C9C;
+  font-size: 30px;
+  text-decoration: line-through;
+}
+.product__item-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 34px;
+}
+.product__size-list {
+  display: flex;
+  gap: 14px;
+}
+.product__size-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+  border: 1px solid var(--black);
+}
+.product__size-button.active {
+  color: var(--white);
+  background-color: var(--black);
+}
+.product__color-list {
+  display: flex;
+  gap: 14px;
+}
+.product__color-button {
+  width: 41px;
+  height: 41px;
+  border-radius: 100px;
+}
+.product__color-button.color-1 {
+  background: linear-gradient(0deg, #927876 0%, #927876 100%), #927876;
+}
+.product__color-button.color-2 {
+  background: #D4D4D4;
+}
+.product__color-button.color-3 {
+  background: #FD9696;
+}
+.product__color-button.color-4 {
+  background: #FDC796;
+}
+.product__color-button.active {
+  border: 1px solid var(--black);
+}
+.product__quantity {
+  display: flex;
+  gap: 11px;
+}
+.product__quantity-input {
+  width: 68px;
+  height: 68px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  border: 1px solid #AFAFAF;
+}
+.product__quantity-button {
+  color: var(--white);
+  background-color: var(--cta);
+  transition: background-color 0.5s;
+}
+.product__quantity-button:is(:hover, :focus) {
+  background-color: #509498;
+}
+.product .collection {
+  padding-top: 130px;
+  padding-bottom: 0;
+}
+.product .collection__list {
+  margin-bottom: 0;
+}
+.product .title {
+  margin-bottom: 67px;
 }

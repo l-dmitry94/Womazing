@@ -741,3 +741,158 @@ body {
 
     }
 }
+
+.product {
+    padding: 190px 0 130px;
+
+    & .page-title {
+        margin-bottom: 102px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 74px;
+    }
+
+    &__photo {
+        width: 536px;
+        height: 729px;
+    }
+
+    &__photo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+        line-height: 1.1;
+
+    }
+
+    &__price-new {
+        color: #998E78;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    &__price-old {
+        color: #9C9C9C;
+        font-size: 30px;
+        text-decoration: line-through;
+    }
+
+    &__size {}
+
+    &__item-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 34px;
+    }
+
+    &__size-list {
+        display: flex;
+        gap: 14px;
+    }
+
+    &__size-item {}
+
+    &__size-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 41px;
+        height: 41px;
+        border: 1px solid var(--black);
+
+        &.active {
+            color: var(--white);
+            background-color: var(--black);
+        }
+    }
+
+    &__color {}
+
+    &__color-list {
+        display: flex;
+        gap: 14px;
+    }
+
+    &__color-item {}
+
+    &__color-button {
+        width: 41px;
+        height: 41px;
+        border-radius: 100px;
+
+        &.color-1 {
+            background: linear-gradient(0deg, #927876 0%, #927876 100%), #927876;
+        }
+
+        &.color-2 {
+            background: #D4D4D4;
+        }
+
+        &.color-3 {
+            background: #FD9696;
+        }
+
+        &.color-4 {
+            background: #FDC796;
+        }
+
+        &.active {
+            border: 1px solid var(--black);
+
+        }
+    }
+
+    &__quantity {
+        display: flex;
+        gap: 11px;
+    }
+
+    &__quantity-input {
+        width: 68px;
+        height: 68px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.40;
+        text-align: center;
+        border: 1px solid #AFAFAF;
+    }
+
+    &__quantity-button {
+        color: var(--white);
+        background-color: var(--cta);
+        transition: background-color .5s;
+
+        &:is(:hover, :focus) {
+            background-color: #509498;
+        }
+    }
+
+    & .collection {
+        padding-top: 130px;
+        padding-bottom: 0;
+    }
+
+    & .collection__list {
+        margin-bottom: 0;
+    }
+
+    & .title {
+        margin-bottom: 67px;
+    }
+}

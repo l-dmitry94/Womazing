@@ -34,6 +34,7 @@ $(document).ready(function () {
     });
     //Прокрутка хедера
 
+    //Слайдер команди
     $('.team__slider').slick({
         slidesToShow: 1,
         fade: true,
@@ -44,5 +45,7 @@ $(document).ready(function () {
         prevArrow: "<svg class='team__arrow-icon team__arrow-left'><use href='./img/icons.svg#icon-slider-arrow-left'></use></svg>",
         nextArrow: "<svg class='team__arrow-icon team__arrow-right'><use href='./img/icons.svg#icon-slider-arrow-right'></use></svg>"
     });
+    //Слайдер команди
+
 
 });
